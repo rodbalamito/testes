@@ -1,5 +1,14 @@
-
 <?php
+
+// Inicie a sessão
+session_start();
+
+// Verifique se o usuário está autenticado
+if (!isset($_SESSION['user_id'])) {
+  // Redirecione para a página de login
+  header('Location: login.php');
+  exit();
+}
 require __DIR__.'/vendor/autoload.php';
 
 use Kreait\Firebase\Factory;
