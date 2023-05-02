@@ -1,0 +1,181 @@
+[02-May-2023 00:53:18 America/Fortaleza] PHP Warning:  Undefined variable $reference in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:53:18 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getValue() on null in /home1/revistaquilombo/public_html/csgo/firebase_config.php:17
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/login.php(3): include_once()
+#1 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:53:20 America/Fortaleza] PHP Warning:  Undefined variable $reference in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:53:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getValue() on null in /home1/revistaquilombo/public_html/csgo/firebase_config.php:17
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/login.php(3): include_once()
+#1 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:53:58 America/Fortaleza] PHP Warning:  Undefined variable $reference in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:53:58 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getValue() on null in /home1/revistaquilombo/public_html/csgo/firebase_config.php:17
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/login.php(7): include_once()
+#1 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/firebase_config.php on line 17
+[02-May-2023 00:54:50 America/Fortaleza] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://teste-c7714-default-rtdb.firebaseio.com/users?orderBy=%22nickname%22&equalTo=%22rodbala%22` resulted in a `400 Bad Request` response:
+{
+  "error" : "Index not defined, add \".indexOn\": \"nickname\", for path \"/users\", to the rules"
+}
+
+ in /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Client.php(123): GuzzleHttp\Promise\Promise->wait()
+#10 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(162): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), Array)
+#11 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(36): Kreait\Firebase\Database\ApiClient->requestApi('GET', '/users?orderBy=...')
+#12 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(88): Kreait\Firebase\Database\ApiClient->get('/users?orderBy=...')
+#13 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#14 /home1/revistaquilombo/public_html/csgo/login.php(16): Kreait\Firebase\Database\Query->getValue()
+#15 {main}
+
+Next Kreait\Firebase\Exception\Database\UnsupportedQuery: Index not defined, add ".indexOn": "nickname", for path "/users", to the rules in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php:92
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#1 /home1/revistaquilombo/public_html/csgo/login.php(16): Kreait\Firebase\Database\Query->getValue()
+#2 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php on line 92
+[02-May-2023 00:55:05 America/Fortaleza] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://teste-c7714-default-rtdb.firebaseio.com/users?orderBy=%22nickname%22&equalTo=%22rodbala%22` resulted in a `400 Bad Request` response:
+{
+  "error" : "Index not defined, add \".indexOn\": \"nickname\", for path \"/users\", to the rules"
+}
+
+ in /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Client.php(123): GuzzleHttp\Promise\Promise->wait()
+#10 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(162): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), Array)
+#11 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(36): Kreait\Firebase\Database\ApiClient->requestApi('GET', '/users?orderBy=...')
+#12 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(88): Kreait\Firebase\Database\ApiClient->get('/users?orderBy=...')
+#13 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#14 /home1/revistaquilombo/public_html/csgo/login.php(19): Kreait\Firebase\Database\Query->getValue()
+#15 {main}
+
+Next Kreait\Firebase\Exception\Database\UnsupportedQuery: Index not defined, add ".indexOn": "nickname", for path "/users", to the rules in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php:92
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#1 /home1/revistaquilombo/public_html/csgo/login.php(19): Kreait\Firebase\Database\Query->getValue()
+#2 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php on line 92
+[02-May-2023 01:01:33 America/Fortaleza] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://teste-c7714-default-rtdb.firebaseio.com/usuarios?orderBy=%22nick%22&equalTo=%22rodbala%22` resulted in a `400 Bad Request` response:
+{
+  "error" : "Index not defined, add \".indexOn\": \"nick\", for path \"/usuarios\", to the rules"
+}
+
+ in /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Client.php(123): GuzzleHttp\Promise\Promise->wait()
+#10 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(162): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), Array)
+#11 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(36): Kreait\Firebase\Database\ApiClient->requestApi('GET', '/usuarios?order...')
+#12 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(88): Kreait\Firebase\Database\ApiClient->get('/usuarios?order...')
+#13 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#14 /home1/revistaquilombo/public_html/csgo/login.php(15): Kreait\Firebase\Database\Query->getValue()
+#15 {main}
+
+Next Kreait\Firebase\Exception\Database\UnsupportedQuery: Index not defined, add ".indexOn": "nick", for path "/usuarios", to the rules in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php:92
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#1 /home1/revistaquilombo/public_html/csgo/login.php(15): Kreait\Firebase\Database\Query->getValue()
+#2 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php on line 92
+[02-May-2023 01:02:00 America/Fortaleza] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://teste-c7714-default-rtdb.firebaseio.com/usuarios?orderBy=%22nick%22&equalTo=%22rodbala%22` resulted in a `400 Bad Request` response:
+{
+  "error" : "Index not defined, add \".indexOn\": \"nick\", for path \"/usuarios\", to the rules"
+}
+
+ in /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home1/revistaquilombo/public_html/csgo/vendor/guzzlehttp/guzzle/src/Client.php(123): GuzzleHttp\Promise\Promise->wait()
+#10 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(162): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), Array)
+#11 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/ApiClient.php(36): Kreait\Firebase\Database\ApiClient->requestApi('GET', '/usuarios?order...')
+#12 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(88): Kreait\Firebase\Database\ApiClient->get('/usuarios?order...')
+#13 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#14 /home1/revistaquilombo/public_html/csgo/login.php(19): Kreait\Firebase\Database\Query->getValue()
+#15 {main}
+
+Next Kreait\Firebase\Exception\Database\UnsupportedQuery: Index not defined, add ".indexOn": "nick", for path "/usuarios", to the rules in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php:92
+Stack trace:
+#0 /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php(113): Kreait\Firebase\Database\Query->getSnapshot()
+#1 /home1/revistaquilombo/public_html/csgo/login.php(19): Kreait\Firebase\Database\Query->getValue()
+#2 {main}
+  thrown in /home1/revistaquilombo/public_html/csgo/vendor/kreait/firebase-php/src/Firebase/Database/Query.php on line 92
+[02-May-2023 01:02:48 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/revistaquilombo/public_html/csgo/login.php on line 26
+[02-May-2023 01:02:48 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:1) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:04:01 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/revistaquilombo/public_html/csgo/login.php on line 23
+[02-May-2023 01:04:01 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:1) in /home1/revistaquilombo/public_html/csgo/login.php on line 29
+[02-May-2023 01:04:37 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/revistaquilombo/public_html/csgo/login.php on line 26
+[02-May-2023 01:04:37 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:1) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:05:02 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:1) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:06:08 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:22) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:06:16 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/revistaquilombo/public_html/csgo/login.php on line 26
+[02-May-2023 01:06:16 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:22) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:06:43 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:22) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:07:34 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:22) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:07:41 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/firebase_config.php:21) in /home1/revistaquilombo/public_html/csgo/login.php on line 32
+[02-May-2023 01:40:43 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/revistaquilombo/public_html/csgo/teste.php on line 28
+[02-May-2023 01:40:43 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/revistaquilombo/public_html/csgo/teste.php:1) in /home1/revistaquilombo/public_html/csgo/teste.php on line 35
+[02-May-2023 12:07:26 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home1/revistaquilombo/public_html/csgo/teste.php on line 158
+[02-May-2023 12:07:29 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home1/revistaquilombo/public_html/csgo/teste.php on line 158
+[02-May-2023 12:07:36 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home1/revistaquilombo/public_html/csgo/teste.php on line 158
+[02-May-2023 12:17:10 America/Fortaleza] PHP Warning:  Undefined variable $usuarioAtual in /home1/revistaquilombo/public_html/csgo/teste.php on line 97
+[02-May-2023 12:17:19 America/Fortaleza] PHP Warning:  Undefined variable $usuarioAtual in /home1/revistaquilombo/public_html/csgo/teste.php on line 97
+[02-May-2023 12:17:32 America/Fortaleza] PHP Warning:  Undefined variable $usuarioAtual in /home1/revistaquilombo/public_html/csgo/teste.php on line 97
+[02-May-2023 12:26:53 America/Fortaleza] PHP Warning:  Undefined array key "autorizado" in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:26:53 America/Fortaleza] PHP Warning:  Undefined array key "autorizado" in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:28:56 America/Fortaleza] PHP Warning:  Undefined array key "autorizado" in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:28:56 America/Fortaleza] PHP Warning:  Undefined array key "autorizado" in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:43:52 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:43:52 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:06 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:06 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:08 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:08 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:08 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:08 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:09 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:09 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:10 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:10 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:14 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:14 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:23 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:44:23 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:45:12 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61
+[02-May-2023 12:45:12 America/Fortaleza] PHP Warning:  Undefined variable $user in /home1/revistaquilombo/public_html/csgo/teste.php on line 61

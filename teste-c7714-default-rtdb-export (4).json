@@ -1,0 +1,32 @@
+{
+  "pickban": {
+    "Mirage": {
+      "class": "card scaleAnimation",
+      "classimg": "mapImg ",
+      "id": 1,
+      "imagem": "assets/de_mirage.jpg",
+      "nome": "Mirage",
+      "selected": false
+    },
+    "Overpass": {
+      "class": "card scaleAnimation",
+      "classimg": "mapImg",
+      "id": 2,
+      "imagem": "assets/de_overpass.jpg",
+      "nome": "Overpass",
+      "selected": false
+    }
+  },
+  "usuarios": {
+    "usuario1": {
+      "autorizado": "nao",
+      "nick": "rodbala",
+      "senha": 123
+    },
+    "usuario2": {
+      "autorizado": "sim",
+      "nick": "teste",
+      "senha": 123
+    }
+  }
+}
